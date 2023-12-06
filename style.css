@@ -13,14 +13,29 @@ h1{
     
 }
 
-p{
+h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 18px; 
+    color: #fff; 
+    background-image: linear-gradient(to right, rgb(0, 162, 255) , rgb(230, 105, 241));
+    border: solid;
+    border-width: 5px;
+    border-right-color: grey;
+    border-bottom-width: 0px;
+    border-top-color:rgb(231, 233, 232);
+    padding-left: 5px;
+    margin-bottom: 0px;
+}
+
+.intro{
     font-weight: bold;
     font-size: 25px;
     padding-left: 5%;
     padding-right: 5%;
 }
 
-img{
+.logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -31,42 +46,119 @@ img{
 }
 
 .cat1{
-    border-style: none;
-    width: 10%;
+    width: 30%;
     float: left;
-    padding: 10%;
 }
 
 .cat2{
-    border-style: none;
-    width: 10%;
+    width: 30%;
     float: right;
-    padding: 10%; 
 }
  
-iframe{
+video{
+    border-style: solid;
+    border-width: 5px;
+    
+    border-top-width: 0px;
+    border-left-color:rgb(231, 233, 232);
+    border-right-color: grey;
+    border-bottom-color: grey;
+    
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.videocap{
+    width:25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+.column {
+    float: left;
+    width: 25%;
+    height: 20%;
+    padding: 10px; 
+    position: relative;
+    text-align: center;
+}
+  
+.row{
+   position:relative;
+   top: 20px;
+}
+.column img{
+    width:50%;
+}
+
+.column p{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position:absolute;
+    top: 70%;
+    color:blue;
+    text-shadow: -1px 1px 0 #ffffff, 
+                          1px 1px 0 #fff, 
+                         1px -1px 0 #fff, 
+                        -1px -1px 0 #fff; 
+}
+
+  /* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    
 }
 
 .buttons{
     margin-top: 10%;
 }
 
-button{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(48, 48, 238);
-    text-shadow: -1px 1px 0 #a5a1a1, 
-                 1px 1px 0 #000, 
-                 1px -1px 0 #000, 
-                -1px -1px 0 #000; 
-    background-color: rgb(219, 217, 217);
-    border-style: solid;
-    border-width: 3px;
-    border-image: linear-gradient(45deg, rgb(177, 182, 181), rgb(94, 94, 91)) 1;
-    font-size: 20px;
-    margin:auto;
-    width: 24%;
-    padding: 10px;
+.piccaption{
+    margin-left:4%; 
+    width: 25%;
+}
+
+.aboutimg{
+    margin-top: 0px;
+    float:left;
+    width: 25%;
+    margin-left:4%;
+    margin-right: 5px;
+    border: solid;
+    border-width: 5px;
+    border-top-color:rgb(231, 233, 232);
+    border-top-width: 0px;
+    border-left-color:rgb(231, 233, 232);
+    border-right-color: grey;
+    border-bottom-color: grey;
+}
+
+.bio{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: solid;
+    border-width: 5px;
+    border-top-width: 0px;
+    border-left-color:rgb(231, 233, 232);
+    border-right-color: grey;
+    border-bottom-color: grey;
+    background-color: #d6d5d5;
+    width:65%;
+    margin-right: 5%;
+    margin-top: 0px;
+    float:right;
+    padding:5px;
+    line-height: 1.6;
+}
+
+.biocaption{
+    width:65%;
+    float:right;
+    margin-right: 5%;
 }
