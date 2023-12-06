@@ -12,27 +12,44 @@
   <body>
     
 
-    <img src="images/patrickport.gif">
+    <img class = "logo" src="images/patrickport.gif">
 
     <h1>
         Welcome to Patrick's Portfolio! 
     </h1>
 
-    <p>
+    <p class="intro">
         Come one come all to this wonderful site, made by the one and only Patrick Zerrudo! 
         Learn all about him in the about section. Discover how one might go about connecting
         with him in the contact section. Uncover all his skills and talents in the resume section.
     </p>
     <img class="cat1" src="images/cat.gif">
     <img class="cat2" src="images/cat.gif">
+    
+    <h2 class="videocap">welcome.mp4</h2>
+    <video width=25% controls>
+      <source src="images/nineties.mp4" type="video/mp4">
+      <source src="images/nineties.mp4" type="video/ogg">
+    </video>
 
-    <iframe width="420" height="345" src="https://www.youtube.com/embed/pqM6ArOoyh8?si=R67-qOBMGMY0fV2T"></iframe>
-
-    <div class="buttons">
-        <button class="button0" onclick=location.href='index.html'>Home!</button>
-        <button class="button1" onclick=location.href='about.html'>About!</button>
-        <button class="button2" onclick=location.href='about.html'>Contact!</button>
-        <button class="button3" onclick=location.href='about.html'>Resume!</button>
+    <div class="row">
+      <div class="column" onclick=location.href='index.html'>
+        <img src="images/home.png" >
+        <p>Home!</p>
+      </div>
+      <div class="column" onclick=location.href='about.html'>
+          <img src="images/about.png"  >
+          <p>About!</p>
+      </div>
+      <div class="column" onclick=location.href='about.html'>
+        <img src="images/contact.png" >
+        <p>Contact!</p>
+      </div>
+      <div class="column" onclick=location.href='about.html'>
+        <img src="images/resume.png"  >
+        <p>Resume!</p>
+      </div>
     </div>
+    
   </body>
 </html>
