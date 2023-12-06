@@ -10,6 +10,7 @@ h1{
                          1px -1px 0 #000, 
                         -1px -1px 0 #000; 
     font-size: 50px;
+    
 }
 
 p{
@@ -27,6 +28,20 @@ img{
     border-width: 5px;
     border-image: linear-gradient(45deg, rgb(177, 182, 181), rgb(94, 94, 91)) 1;
     
+}
+
+.cat1{
+    border-style: none;
+    width: 10%;
+    float: left;
+    padding: 10%;
+}
+
+.cat2{
+    border-style: none;
+    width: 10%;
+    float: right;
+    padding: 10%; 
 }
  
 iframe{
@@ -48,7 +63,7 @@ button{
                 -1px -1px 0 #000; 
     background-color: rgb(219, 217, 217);
     border-style: solid;
-    border-width: 2px;
+    border-width: 3px;
     border-image: linear-gradient(45deg, rgb(177, 182, 181), rgb(94, 94, 91)) 1;
     font-size: 20px;
     margin:auto;
