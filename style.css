@@ -24,6 +24,7 @@ h2{
     border-right-color: grey;
     border-bottom-width: 0px;
     border-top-color:rgb(231, 233, 232);
+    border-left-color:rgb(231, 233, 232);
     padding-left: 5px;
     margin-bottom: 0px;
 }
@@ -90,8 +91,8 @@ video{
 }
   
 .row{
-   position:relative;
-   top: 20px;
+   margin-top: 8%;
+   height: 200px;
 }
 .column img{
     width:50%;
@@ -101,6 +102,7 @@ video{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position:absolute;
     top: 70%;
+    left: 42%;
     color:blue;
     text-shadow: -1px 1px 0 #ffffff, 
                           1px 1px 0 #fff, 
@@ -133,11 +135,11 @@ video{
     margin-right: 5px;
     border: solid;
     border-width: 5px;
-    border-top-color:rgb(231, 233, 232);
     border-top-width: 0px;
     border-left-color:rgb(231, 233, 232);
     border-right-color: grey;
     border-bottom-color: grey;
+    z-index: 1;
 }
 
 .bio{
@@ -161,4 +163,44 @@ video{
     width:65%;
     float:right;
     margin-right: 5%;
+}
+
+.aligned{
+    display: flex;
+    align-items: center; 
+}
+
+.biosection{
+    margin-bottom: auto;
+    height: 350px;
+}
+
+form{
+    padding:5px;
+    background-color: #c4c1c1;
+    width:25%;
+    text-align: center;
+    border: solid;
+    border-width: 5px;
+    border-top-width: 0px;
+    border-left-color:rgb(231, 233, 232);
+    border-right-color: grey;
+    border-bottom-color: grey;
+    margin: auto;
+}
+
+.contactcap{
+    width:25%;
+    margin:auto;
+}
+.submissionform{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.submitbutton{
+    border-top-color:rgb(231, 233, 232);
+    border-left-color:rgb(231, 233, 232);
+    border-right-color: grey;
+    border-bottom-color: grey;
 }
