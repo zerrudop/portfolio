@@ -14,7 +14,7 @@ h1{
 }
 
 h2{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: lighter;
     font-size: 18px; 
     color: #fff; 
@@ -57,6 +57,8 @@ h2{
 }
  
 video{
+
+    width : 25%;
     border-style: solid;
     border-width: 5px;
     
