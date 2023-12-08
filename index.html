@@ -10,9 +10,14 @@
   </head>
   
   <body>
-    
 
-    <img class = "logo" src="images/patrickport.gif">
+    <script>
+      function openResume() {
+        open("Resume2022Oct.pdf");
+      }
+  
+    </script>
+    <img class = "logo" alt = "patrickportfolio" src="images/patrickport.gif">
 
     <h1>
         Welcome to Patrick's Portfolio! 
@@ -23,30 +28,37 @@
         Learn all about him in the about section. Discover how one might go about connecting
         with him in the contact section. Uncover all his skills and talents in the resume section.
     </p>
-    <img class="cat1" src="images/cat.gif">
-    <img class="cat2" src="images/cat.gif">
+    <img class="cat1" alt="catspin" src="images/cat.gif">
+    <img class="cat2" alt="catspin" src="images/cat.gif">
     
     <h2 class="videocap">welcome.mp4</h2>
-    <video width=25% controls>
+    <video>
       <source src="images/nineties.mp4" type="video/mp4">
       <source src="images/nineties.mp4" type="video/ogg">
     </video>
 
+    
     <div class="row">
-      <div class="column" onclick=location.href='index.html'>
-        <img src="images/home.png" >
-        <p>Home!</p>
-      </div>
-      <div class="column" onclick=location.href='about.html'>
-          <img src="images/about.png"  >
-          <p>About!</p>
-      </div>
-      <div class="column" onclick=location.href='contact.html'>
-        <img src="images/contact.png" >
-        <p>Contact!</p>
-      </div>
-      <div class="column" onclick=location.href='contact.html'>
-        <img src="images/resume.png"  >
+      <a target="_self" href="index.html">
+        <div class="column">
+          <img alt="famguy" src="images/home.png" >
+          <p>Home!</p>
+        </div>
+      </a>
+      <a target="_self" href="about.html">
+        <div class="column">
+            <img alt="question" src="images/about.png"  >
+            <p>About!</p>
+        </div>
+      </a>
+      <a target="_self" href="contact.html">
+        <div class="column">
+          <img alt="phone" src="images/contact.png" >
+          <p>Contact!</p>
+        </div>
+      </a>
+      <div class="column" onclick="openResume()">
+        <img alt="paper" src="images/resume.png"  >
         <p>Resume!</p>
       </div>
     </div>
