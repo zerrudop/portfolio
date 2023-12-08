@@ -8,9 +8,15 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+
+    <script>
+      function openResume() {
+        window.open("Resume2022Oct.pdf");
+      }
+    </script>
     <div class="biosection">
       <h2 class="piccaption">patrick.jpg</h2>
-      <img class = "aboutimg" src="images/linkedin.jpg">
+      <img class = "aboutimg" alt="handsome" src="images/linkedin.jpg">
         
       <h2 class="biocaption">About Me!</h2>
       <p class="bio">
@@ -30,23 +36,29 @@
    
 
     <div class="row">
-      <div class="column" onclick=location.href='index.html'>
-        <img src="images/home.png">
-        <p>Home!</p>
-      </div>
-      <div class="column" onclick=location.href='about.html'>
-          <img src="images/about.png"  >
-          <p>About!</p>
-      </div>
-      <div class="column" onclick=location.href='contact.html'>
-        <img src="images/contact.png">
-        <p>Contact!</p>
-      </div>
-      <div class="column" onclick=location.href='contact.html'>
-        <img src="images/resume.png" >
+      <a target="_self" href="index.html">
+        <div class="column">
+          <img alt="famguy" src="images/home.png" >
+          <p>Home!</p>
+        </div>
+      </a>
+      <a target="_self" href="about.html">
+        <div class="column">
+            <img alt="question" src="images/about.png"  >
+            <p>About!</p>
+        </div>
+      </a>
+      <a target="_self" href="contact.html">
+        <div class="column">
+          <img alt="phone" src="images/contact.png" >
+          <p>Contact!</p>
+        </div>
+      </a>
+      <div class="column" onclick="openResume()">
+        <img alt="paper" src="images/resume.png"  >
         <p>Resume!</p>
       </div>
-      
     </div>
+      
   </body>
 </html>
