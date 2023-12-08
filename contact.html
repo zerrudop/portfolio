@@ -10,36 +10,47 @@
   </head>
   
   <body>
- 
+
+    <script>
+      function openResume() {
+        window.open("Resume2022Oct.pdf");
+      }
+    </script>
     <h2 class="contactcap">Get in Contact!</h2>
         <form class="emailform">
             <label for="name">Full name:</label><br>
-            <input type="text"><br>
+            <input id="name" type="text"><br>
             <label for="email">Email:</label><br>
-            <input type="text"><br><br>
+            <input id="email" type="text"><br><br>
             <label for="message">Message:</label><br>
-            <textarea class="message" rows="15" cols="30"></textarea><br>
+            <textarea id="message" class="message" rows="15" cols="30"></textarea><br>
             <input class="submitbutton" type="submit" value="Submit">
         </form>  
 
-    <div class="row">
-        <div class="column" onclick=location.href='index.html'>
-          <img src="images/home.png" >
-          <p>Home!</p>
+        <div class="row">
+          <a target="_self" href="index.html">
+            <div class="column">
+              <img alt="famguy" src="images/home.png" >
+              <p>Home!</p>
+            </div>
+          </a>
+          <a target="_self" href="about.html">
+            <div class="column">
+                <img alt="question" src="images/about.png"  >
+                <p>About!</p>
+            </div>
+          </a>
+          <a target="_self" href="contact.html">
+            <div class="column">
+              <img alt="phone" src="images/contact.png" >
+              <p>Contact!</p>
+            </div>
+          </a>
+          <div class="column" onclick="openResume()">
+            <img alt="paper" src="images/resume.png"  >
+            <p>Resume!</p>
+          </div>
         </div>
-        <div class="column" onclick=location.href='about.html'>
-            <img src="images/about.png"  >
-            <p>About!</p>
-        </div>
-        <div class="column" onclick=location.href='contact.html'>
-          <img src="images/contact.png" >
-          <p>Contact!</p>
-        </div>
-        <div class="column" onclick=location.href='contact.html'>
-          <img src="images/resume.png"  >
-          <p>Resume!</p>
-        </div>
-      </div>
   </body>
 
 </html>
